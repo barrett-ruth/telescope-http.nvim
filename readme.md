@@ -31,8 +31,10 @@ require('telescope').load_extension 'http'
 require('telescope').setup {
     extensions = {
         http = {
-            -- How the mozilla url is opened. By default:
-            open_url = 'xdg-open %s'
+            -- How the mozilla url is opened. By default will be configured based on OS:
+            open_url = 'xdg-open %s' -- UNIX
+            -- open_url = 'open %s' -- OSX
+            -- open_url = 'start %s' -- Windows
         }
     }
 }
