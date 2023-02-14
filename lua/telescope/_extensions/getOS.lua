@@ -1,5 +1,6 @@
 return function()
     -- ask LuaJIT first
+    -- will return "Windows", "Linux", "OSX", "BSD", "POSIX" or "Other"
     if jit then return jit.os end
 
     -- Unix, Linux variants
