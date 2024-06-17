@@ -11,7 +11,7 @@ Install via your favorite package manager, like [lazy.nvim](https://github.com/f
 ```lua
 require('lazy').setup({
     {
-        'barrett-ruth/telescope-http.nvim'
+        'barrett-ruth/telescope-http.nvim',
         config = function()
             require('telescope').load_extension('http')
         end,

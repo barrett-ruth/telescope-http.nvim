@@ -18,6 +18,7 @@ local opts = {}
 
 return telescope.register_extension {
     setup = function(http_opts, _)
+        vim.notify_once('telescope-http.nvim: Error 301, migrate to `barrett-ruth/http-codes.nvim` ', vim.log.levels.ERROR)
         opts = vim.tbl_extend('force', default_opts, http_opts)
     end,
     exports = {
