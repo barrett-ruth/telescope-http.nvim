@@ -6,24 +6,23 @@ and [mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP).
 
 ## Installation
 
-Install via your favorite package manager, like [paq](https://github.com/savq/paq-nvim):
+Install via your favorite package manager, like [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
-require 'paq' {
-    'savq/paq-nvim',
-    'barrett-ruth/telescope-http.nvim'
-}
+require('lazy').setup({
+    {
+        'barrett-ruth/telescope-http.nvim'
+        config = function()
+            require('telescope').load_extension('http')
+        end,
+        dependencies = {
+            -- either:
+            'nvim-telescope/telescope.nvim',
+            'ibhagwan/fzf-lua'
+        }
+    }
+})
 ```
-
-Then load the extension:
-
-```lua
-require('telescope').load_extension 'http'
-```
-
-## Dependencies
-
-- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 
 ## Configuration
 
