@@ -15,11 +15,7 @@ require('lazy').setup({
         config = function()
             require('telescope').load_extension('http')
         end,
-        dependencies = {
-            -- either:
-            'nvim-telescope/telescope.nvim',
-            'ibhagwan/fzf-lua'
-        }
+        dependencies = 'nvim-telescope/telescope.nvim',
     }
 })
 ```
