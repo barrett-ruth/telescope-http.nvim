@@ -1,3 +1,7 @@
+# Deprecation Notice
+
+**_NO SETUP REQUIRED&mdash;migrate to [http-codes.nvim](https://github.com/barrett-ruth/http-codes.nvim)._**
+
 # telescope-http.nvim
 
 Quickly investigate HTTP status codes with the help of
